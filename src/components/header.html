@@ -1,0 +1,48 @@
+<nav class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/20 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 h-20 transition-all duration-300">
+  <div class="flex items-center gap-4 flex-1">
+    <a class="flex items-center" href="/index.html">
+      <img alt="Ventura Mecanics SA Logo" class="h-10 w-auto object-contain" src="/assets/VENTURA_PACKAGE_LOGO_2024/horizontal_rond_ventura_bleu.png" />
+    </a>
+  </div>
+  
+  <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
+    <a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300 font-label-sm text-label-sm font-display uppercase" href="/src/pages/tool-heads/index.html">Tool-Heads</a>
+    <a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300 font-label-sm text-label-sm font-display uppercase" href="/src/pages/lathes/index.html">Lathes</a>
+    <a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300 font-label-sm text-label-sm font-display uppercase" href="/src/pages/parts-equipment/index.html">Parts & Equipment</a>
+    <a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300 font-label-sm text-label-sm font-display uppercase" href="/src/pages/about-us/index.html">About us</a>
+    <a class="text-on-surface-variant font-medium hover:text-primary transition-all duration-300 font-label-sm text-label-sm font-display uppercase" href="/src/pages/downloads/index.html">Downloads</a>
+    <a class="text-primary font-bold hover:text-primary/80 transition-all duration-300 font-label-sm text-label-sm font-display uppercase border-l-2 border-outline-variant/30 pl-8" href="/src/pages/contact/index.html">Contact us</a>
+  </div>
+  
+  <div class="flex items-center justify-end gap-4 flex-1">
+    
+    <!-- Language Switcher -->
+    <div class="relative group">
+      <button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-sm font-bold uppercase tracking-wider px-2 py-1">
+        <span class="material-symbols-outlined text-[18px]">language</span>
+        EN
+        <span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+      </button>
+      
+      <!-- Dropdown Menu -->
+      <div class="absolute right-0 mt-2 w-32 bg-surface-container rounded-xl shadow-lg border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50">
+        <div class="py-2 flex flex-col">
+          <a href="#" class="px-4 py-2 font-label-sm uppercase font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors flex justify-between items-center">
+            English
+            <span class="material-symbols-outlined text-[16px]">check</span>
+          </a>
+          <a href="#" class="px-4 py-2 font-label-sm uppercase font-medium text-on-surface hover:bg-surface-container-high transition-colors">
+            Français
+          </a>
+          <a href="#" class="px-4 py-2 font-label-sm uppercase font-medium text-on-surface hover:bg-surface-container-high transition-colors">
+            Deutsch
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <button class="md:hidden text-on-background">
+      <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+  </div>
+</nav>

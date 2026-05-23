@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us - The Business Case for Retrofit - Ventura Mecanics SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="../.." }}
+
+  <main class="flex-grow w-full flex flex-col items-center">
+    <!-- ABOUT US INTRODUCTION -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-4xl w-full flex flex-col items-center gap-8 text-center fade-in">
+        <h1 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-background">Ventura Mecanics SA</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+          We are a Swiss precision engineering specialist dedicated to pushing the boundaries of mechanical and CNC turning. As a family business created in 1983 with three generations now onboard, we supply robust, innovative turning solutions to the world's most demanding manufacturing sectors.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY US SALES PITCH CONTAINER -->
+    <div id="why-us" class="w-full flex flex-col items-center">
+    <!-- 1. THE EXECUTIVE PITCH -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
+      <!-- Minimalist background texture -->
+      <div class="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary via-background to-background"></div>
+      
+      <div class="max-w-4xl w-full flex flex-col items-center gap-8 text-center relative z-10 fade-in">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] font-bold">The Strategic Business Case</span>
+        <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg font-bold tracking-tight text-white leading-tight">
+          The most sustainable and profitable machine tool is the one that already exists.
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-primary-container max-w-3xl mx-auto">
+          Between <strong class="text-white">50% and 80%</strong> of a machine tool's carbon footprint is generated before its initial commissioning (raw materials, foundry, transport). Scrapping a fully operational, ultra-rigid Swiss cast-iron base to buy new is an unnecessary environmental and economic compromise.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. THE ECONOMIC REALITY (RETROFIT VS. NEW) -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-6xl w-full flex flex-col gap-12 fade-in">
+        <div class="text-center">
+          <h2 class="font-headline-lg text-headline-lg font-bold text-on-background mb-4">The Economic Reality: Retrofit vs. New</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            A Ventura retrofit transforms your legacy mechanical lathes into cutting-edge CNC platforms with superior ROI.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+          <!-- CAPEX -->
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex items-start gap-6 shadow-sm">
+            <div class="bg-primary/10 text-primary p-4 rounded-full flex-shrink-0">
+              <span class="material-symbols-outlined text-[32px]">savings</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">CAPEX Investment</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Experience a <strong>30% to 60% lower</strong> capital expenditure compared to acquiring brand new equipment, freeing up vital cash flow.
+              </p>
+            </div>
+          </div>
+          <!-- Lead Times -->
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex items-start gap-6 shadow-sm">
+            <div class="bg-primary/10 text-primary p-4 rounded-full flex-shrink-0">
+              <span class="material-symbols-outlined text-[32px]">timer</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">Lead Times</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Dramatically shorter turnaround and delivery. Upgrade your production capabilities in weeks, not months or years.
+              </p>
+            </div>
+          </div>
+          <!-- CO2 & ESG -->
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex items-start gap-6 shadow-sm">
+            <div class="bg-primary/10 text-primary p-4 rounded-full flex-shrink-0">
+              <span class="material-symbols-outlined text-[32px]">eco</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">CO2 & ESG Compliance</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Minimal environmental impact. Instantly align your manufacturing infrastructure with corporate ESG audits and carbon neutrality mandates by maximizing circular economy principles.
+              </p>
+            </div>
+          </div>
+          <!-- Tailored Performance -->
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex items-start gap-6 shadow-sm">
+            <div class="bg-primary/10 text-primary p-4 rounded-full flex-shrink-0">
+              <span class="material-symbols-outlined text-[32px]">tune</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">Tailored Performance</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Performance exactly matched to your specific manufacturing needs, preventing over-engineered, costly features you will never use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE WORKFORCE GAP & GENERATIONAL TRANSITION -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-low border-y border-outline-variant/20">
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center fade-in">
+        <div class="flex flex-col gap-6">
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] font-bold">The Human Factor</span>
+          <h2 class="font-headline-lg text-headline-lg font-bold text-on-background leading-tight">Bridging the Generational Workforce Gap</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            A critical production bottleneck faces modern manufacturing: workers with deep mastery of traditional mechanical cam machines are retiring, and qualified cam specialists are increasingly rare.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            A Ventura digital retrofit is the ultimate transition solution. It translates heavy, complex mechanics into a modern, intuitive tech ecosystem using our <strong>SoftCam programming and conversational pictograms</strong>. 
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant font-semibold text-on-surface">
+            Young digital-native technicians can understand, configure, and operate the retrofitted lathes immediately. You evolve your workshop's capabilities without paying astronomical new equipment prices.
+          </p>
+        </div>
+        <div class="bg-surface-container-highest rounded-2xl p-10 flex flex-col justify-center gap-8 h-full min-h-[400px] border border-outline-variant/30 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+          
+          <div class="relative z-10 flex items-center gap-6">
+            <span class="material-symbols-outlined text-[48px] text-primary">person_off</span>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">The Challenge</h4>
+              <p class="font-body-md text-on-surface-variant">Retiring experts & complex mechanical setups.</p>
+            </div>
+          </div>
+          
+          <div class="relative z-10 flex justify-center py-2">
+            <span class="material-symbols-outlined text-outline">arrow_downward</span>
+          </div>
+          
+          <div class="relative z-10 flex items-center gap-6">
+            <span class="material-symbols-outlined text-[48px] text-primary">touch_app</span>
+            <div>
+              <h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">The Solution</h4>
+              <p class="font-body-md text-on-surface-variant">SoftCam digital interface for digital-native operators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- 4. ACTION CTAS -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-3xl w-full flex flex-col items-center gap-8 text-center fade-in">
+        <h2 class="font-headline-lg text-headline-lg font-bold text-on-background">Secure Your Production Future Today</h2>
+        <div class="flex flex-col sm:flex-row justify-center gap-6 mt-4 w-full">
+          <a href="/index.html" class="flex-1 sm:flex-none border border-outline-variant text-on-surface font-button text-button uppercase tracking-wider px-10 py-5 rounded-full hover:bg-surface-container transition-colors duration-300 flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+            Return to Home Page
+          </a>
+          <a href="/src/pages/contact/index.html?interest=retrofit-study" class="flex-1 sm:flex-none bg-primary text-white font-button text-button uppercase tracking-wider px-10 py-5 rounded-full hover:bg-primary/90 transition-colors duration-300 shadow-md flex items-center justify-center gap-2">
+            Contact our Engineering Team
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  {{> footer base="../.." }}
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Ventura Mecanics SA - Precision Engineering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="." }}
+
+  <main class="flex-grow w-full flex flex-col items-center">
+    <!-- SECTION 1: HERO & ACCROCHE PRINCIPALE -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center text-center bg-surface-container-lowest relative overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="/assets/matiere_redresseur-Photoroom 1.png" class="w-full h-full object-cover opacity-15 mix-blend-multiply" alt="Ventura Background" />
+      </div>
+      <div class="max-w-4xl flex flex-col gap-6 items-center relative z-10">
+        <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg font-bold text-on-background tracking-tight">
+          Tool-Heads And Lathes For Small Diameter Precision Turned Parts
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Global Leaders in Escomatic® Solutions with Over 40 Years of Excellence. Spare parts, Repairs and Smart turning solutions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+          <a href="/src/pages/about-us/index.html#why-us" class="bg-primary-container text-white font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-primary-container/90 transition-colors duration-300 flex items-center justify-center gap-2">
+            Learn Why Ventura® Solutions Are Ideal
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+          <button onclick="document.getElementById('videoModal').showModal()" class="border border-outline text-on-surface font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-surface-container transition-colors duration-300 flex items-center justify-center gap-2 bg-surface/50 backdrop-blur-sm">
+            Customer Testimony
+            <span class="material-symbols-outlined text-[18px]">play_circle</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARGET INDUSTRIES STRIP -->
+    <div class="w-full bg-[#00A3E0]/5 border-y border-[#00A3E0]/20 py-4 overflow-hidden flex items-center justify-center">
+      <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-4 gap-y-2 text-xs md:text-sm px-4 w-full max-w-7xl text-center">
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Automotive</span>
+        <span class="text-primary/30 hidden sm:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Medical</span>
+        <span class="text-primary/30 hidden sm:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Security Hardware</span>
+        <span class="text-primary/30 hidden md:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Electronics</span>
+        <span class="text-primary/30 hidden md:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Watchmaking</span>
+        <span class="text-primary/30 hidden lg:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Precision Screws</span>
+        <span class="text-primary/30 hidden lg:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Connectors</span>
+        <span class="text-primary/30 hidden xl:inline">|</span>
+        <span class="font-label-sm text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Dental</span>
+      </div>
+    </div>
+
+    <!-- SECTION 2: HOME BENTO GRID (The 4 Pillars) -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 bg-surface flex flex-col items-center">
+      <div class="max-w-6xl w-full">
+        <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-12 text-center">Our 4 Pillars of Excellence</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-bento-gap">
+          {{> bento-card 
+              title="Ventura Mechanical & CNC Lathes" 
+              tag="LATHES" 
+              image="/assets/softcam-v6-7%201.png"
+              description="World's Fastest Precision turning for small diameter parts from ø 0.3 - 8mm." 
+              link="/src/pages/lathes/index.html" 
+          }}
+          {{> bento-card 
+              title="Complete Overhaul & Upgrades" 
+              tag="TOOL-HEADS" 
+              image="/assets/PROMO_mandrins-Photoroom%201.png"
+              description="+600 Escomatic® Tool-Heads repaired in-house every year." 
+              link="/src/pages/tool-heads/index.html" 
+          }}
+          {{> bento-card 
+              title="Equipment, Accessories & Spare Parts" 
+              tag="SPARE PARTS" 
+              image="/assets/parts-accessories.png"
+              description="Rapid delivery from our inventory of +3'000 spare parts." 
+              link="/src/pages/parts-equipment/index.html" 
+          }}
+          {{> bento-card 
+              title="Parts Feasibility Study" 
+              tag="ENGINEERING" 
+              image="/assets/parts-study.png"
+              description="Evaluate the potential of Ventura's Smart Turning Solutions with samples & production rates." 
+              link="/src/pages/contact/index.html" 
+          }}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{> footer base="." }}
+  
+  <dialog id="videoModal" class="backdrop:bg-black/80 backdrop:backdrop-blur-sm bg-transparent w-[95%] max-w-4xl p-0 m-auto rounded-xl shadow-2xl border border-white/10 overflow-hidden">
+    <div class="w-full bg-surface-container-highest flex justify-end p-2 border-b border-white/10">
+      <button onclick="document.getElementById('videoModal').close()" class="text-on-surface hover:text-primary transition-colors flex items-center gap-1 font-label-sm px-3 py-1 rounded">
+        <span class="material-symbols-outlined text-[20px]">close</span> Close
+      </button>
+    </div>
+    <div class="relative w-full aspect-video bg-black">
+      <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/GA9Aobsmqj4" title="Customer Testimony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

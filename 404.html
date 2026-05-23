@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Page Not Found - Ventura Mecanics SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="." }}
+
+  <main class="flex-grow w-full flex flex-col items-center justify-center bg-surface-container-lowest px-margin-mobile md:px-margin-desktop py-24">
+    <div class="max-w-2xl w-full flex flex-col items-center text-center gap-8 fade-in">
+      
+      <div class="bg-primary/10 text-primary p-6 rounded-full flex items-center justify-center mb-4">
+        <span class="material-symbols-outlined text-[64px]">search_off</span>
+      </div>
+
+      <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg font-bold text-on-background leading-tight">
+        404 <br/> Page Not Found
+      </h1>
+      
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+        The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mt-8 w-full justify-center">
+        <a href="/index.html" class="bg-primary text-white font-button text-button uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300 shadow-md flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">home</span>
+          Back to Home
+        </a>
+        <a href="/src/pages/contact/index.html" class="border border-outline-variant text-on-surface font-button text-button uppercase tracking-wider px-8 py-4 rounded-full hover:bg-surface-container transition-colors duration-300 flex items-center justify-center gap-2">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  {{> footer base="." }}
+  
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

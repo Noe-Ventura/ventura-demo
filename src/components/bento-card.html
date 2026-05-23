@@ -1,0 +1,29 @@
+<div class="bg-[#00A3E0]/5 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden min-h-[400px] group">
+  {{#if image}}
+  <img src="{{image}}" alt="{{title}}" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" />
+  {{/if}}
+  
+  <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
+  
+  {{#if tag}}
+  <div class="absolute top-6 right-6 z-30">
+    <span class="font-label-sm text-[11px] font-bold tracking-widest text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm uppercase">{{tag}}</span>
+  </div>
+  {{/if}}
+  
+  <div class="relative z-20 flex flex-col justify-end h-full p-8">
+    <div class="flex justify-between items-end mb-2">
+      <h3 class="font-headline-md text-headline-md font-bold text-on-surface">{{title}}</h3>
+    </div>
+    
+    <p class="font-body-md text-body-md text-on-surface-variant flex-grow-0 mt-2">
+      {{description}}
+    </p>
+    
+    {{#if link}}
+    <a href="{{link}}" class="text-primary font-bold font-button text-button hover:underline mt-6 flex items-center gap-1 w-fit">
+      Explore <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+    </a>
+    {{/if}}
+  </div>
+</div>

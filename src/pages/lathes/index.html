@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Ventura® Lathes - Ventura Mecanics SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="../.." }}
+
+  <main class="flex-grow w-full flex flex-col items-center">
+    
+    <!-- PAGE NAVIGATION & HERO -->
+    <section class="relative overflow-hidden w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-inverse-surface text-inverse-on-surface">
+      
+      <!-- Background Videos -->
+      <div class="absolute inset-0 z-0 w-full h-full opacity-[0.35] pointer-events-none">
+        <video src="/assets/video/2026_VENTURA_V4_30sec.mp4" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+      </div>
+      <!-- Bottom blend mask -->
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/50 to-transparent pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-6xl w-full flex flex-col items-center gap-8 text-center fade-in">
+        <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg font-bold tracking-tight text-white">Ventura® Lathes</h1>
+        <p class="font-body-lg text-body-lg text-on-primary-container max-w-3xl mx-auto">
+          World-class mechanical and CNC Lathes offering unprecedented precision, high-performance turning, and lowest cost per part for small diameters.
+        </p>
+        <a href="/assets/PDFs/Ventura-AG-Lathes-Locked.pdf" target="_blank" class="mt-4 bg-primary-container text-white border border-primary/50 font-button text-button uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary transition-colors duration-300 flex items-center justify-center gap-2 shadow-lg">
+          Lathes Application Guide
+          <span class="material-symbols-outlined text-[18px]">download</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE TWO ECOSYSTEMS OVERVIEW -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-6xl w-full flex flex-col gap-12 fade-in">
+        <div class="text-center">
+          <h2 class="font-headline-lg text-headline-lg font-bold text-on-background mb-4">Two Manufacturing Philosophies</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Choose the core ecosystem that perfectly aligns with your production volume and flexibility requirements.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in">
+            <img src="/assets/Vector Machine Angle.png" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="SoftCam CNC Lathe" />
+            <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute top-0 left-0 w-1 h-full bg-primary z-20 group-hover:w-2 transition-all duration-300"></div>
+            
+            <div class="relative z-20 flex flex-col gap-2">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="material-symbols-outlined text-[32px] text-primary bg-surface/50 backdrop-blur p-2 rounded-full shadow-sm">memory</span>
+                <span class="font-label-sm text-[11px] text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm uppercase tracking-widest font-bold">Virtual Cams Algorithm</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">SoftCam CNC</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Engineered for absolute production flexibility and higher productivity. Ideal for frequent setups, complex part geometries, and rapid changeovers without sacrificing speed.
+              </p>
+            </div>
+          </div>
+          
+          <div class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in" style="transition-delay: 100ms;">
+            <img src="/assets/flexcam-v2.jpg" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="FlexCam Mechanical Lathe" />
+            <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute top-0 left-0 w-1 h-full bg-secondary z-20 group-hover:w-2 transition-all duration-300"></div>
+            
+            <div class="relative z-20 flex flex-col gap-2">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="material-symbols-outlined text-[32px] text-secondary bg-surface/50 backdrop-blur p-2 rounded-full shadow-sm">settings_applications</span>
+                <span class="font-label-sm text-[11px] text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm uppercase tracking-widest font-bold">Mechanical Cams System</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md font-bold text-on-surface">FlexCam Mechanical</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Designed for large production series. Delivers ultra-optimized, high-volume efficiency to achieve the absolute lowest cost per part in continuous manufacturing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1.5 VIDEO SHOWCASE -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-6xl w-full rounded-2xl overflow-hidden border border-outline-variant/30 shadow-xl relative aspect-[21/9] md:aspect-video fade-in">
+        <video src="/assets/video/2026_VENTURA_V2_30sec.mp4" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-12 pointer-events-none">
+          <h3 class="font-headline-lg text-headline-lg md:font-display-sm md:text-display-sm font-bold text-white drop-shadow-lg">Uncompromising Rigidity</h3>
+          <p class="font-body-lg text-white/90 max-w-2xl drop-shadow-md mt-2">The cast-iron foundation of Ventura lathes ensures absolute vibration damping for perfect surface finishes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SOFTCAM CNC LINEUP (THE 6 MODELS) -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface">
+      <div class="max-w-7xl w-full flex flex-col gap-16">
+        <div class="text-center fade-in">
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold mb-2 block">Flagship Series</span>
+          <h2 class="font-headline-xl text-headline-xl font-bold text-on-background">SoftCam CNC Lineup</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mt-4">
+            A comprehensive range of 6 advanced CNC models featuring our proprietary Virtual Cam System. 
+            Experience mechanical cycle times with CNC versatility.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          
+          <!-- V2 SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V2</h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.15 - 5 mm | Max Len: 110 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Turning & Cutting</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Knurling</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                The only CNC machine on the market matching mechanical cam cycle times. Simultaneous execution of axes movements. Programming learned in a few hours via optimized pictograms.
+              </p>
+            </div>
+          </div>
+
+          <!-- V2-PM / V2-PMF SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in" style="transition-delay: 50ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V2-PM<span class="text-on-surface-variant text-[24px]">/PMF</span></h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.15 - 5 mm | Max Len: 110 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Mobile Counter Collet</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Milling (PMF)</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Turning</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Features an axially movable counter-collet for tough materials where chips are difficult to remove. Perfect for turning rivets that cannot be ejected normally.
+              </p>
+            </div>
+          </div>
+
+          <!-- V4 / V5 SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in" style="transition-delay: 100ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V4<span class="text-on-surface-variant text-[24px]">/V5</span></h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.15 - 5 mm | Max Len: 110 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">3-Station Turret</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Mobile Collet</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Turning</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Features a 3-station turret (1 counter-collet, 2 boring). Station change in 1/4" driven by a Geneva drive with pilot punch locking for absolute positioning accuracy.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6S SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in" style="transition-delay: 150ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6S</h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.50 - 6.35 mm | Max Len: 124 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">3 Ind. Tools</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Turning & Cutting</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Engineered for medium and large series. Features a counter-collet enabling clean cutting without cut-off burrs. Lubricant delivered by 6 converging jets for self-cleansing.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6-PM SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in" style="transition-delay: 200ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6-PM</h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.50 - 6.35 mm | Max Len: 124 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">3 Ind. Tools</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Mobile Collet</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Turning</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Integrates a programmable mobile counter-collet on the high-speed V6 platform, combining heavy-duty series capacity with tough material chip management.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6SR1A SoftCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col shadow-sm fade-in" style="transition-delay: 250ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6SR1A</h3>
+              <span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-3 py-1 rounded-full border border-primary/20">CNC Virtual Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. ø 0.50 - 6.35 mm | Max Len: 124 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capabilities</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">4-Station Turret</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Tapping/Threading</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                High-end complex machining. 4-station turret (front, back & transverse). Servo-controlled high-precision threading driven by auxiliary motor with electric braking.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FLEXCAM MECHANICAL LINEUP -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-low border-y border-outline-variant/20">
+      <div class="max-w-7xl w-full flex flex-col gap-16">
+        <div class="text-center fade-in">
+          <div class="flex items-center justify-center gap-3 mb-2">
+            <span class="material-symbols-outlined text-[28px] text-secondary">settings</span>
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">High Volume Manufacturing</span>
+          </div>
+          <h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">FlexCam Mechanical Lineup</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mt-4">
+            For dedicated, large-scale production runs, our FlexCam series utilizes an ultra-optimized <strong>Mechanical Cam System</strong>. 
+            Every SoftCam model has an identical FlexCam twin sharing the exact same structural footprints and tool capacities.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          
+          <!-- V2 FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V2</h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 5 mm (mild steel)</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Coil Stock Turning</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Fastest solution for economical and precise medium/large series. Features individual optimization of operational parameters. Camshaft speed can be programmed per segment to slow down feed during sectioning and increase it while turning.
+              </p>
+            </div>
+          </div>
+
+          <!-- V2-PM / V2-PMF FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in" style="transition-delay: 50ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V2-PM<span class="text-on-surface-variant text-[24px]">/PMF</span></h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 5 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Mobile Counter Collet</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Attachments</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Evolution of the V2 FlexCam equipped with an axially movable counter-collet. Optimized for stiff materials. Enables the precise turning and clean cutting of rivets and similar parts which cannot be normally ejected.
+              </p>
+            </div>
+          </div>
+
+          <!-- V4 / V5 FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in" style="transition-delay: 100ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V4<span class="text-on-surface-variant text-[24px]">/V5</span></h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 5 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">3-Station Turret</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Features a high-precision 3-station turret (1 counter-collet, 2 boring). Station change in 1/4" driven by a Geneva drive. Locking via a pilot punch placed on a larger radius guarantees absolute positioning accuracy.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6 FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in" style="transition-delay: 150ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6</h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 6.35 mm (coil stock)</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">High-Volume System</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                The ultimate high-speed solution to mass-produce parts without threading or drilling. Equipped with a counter-collet for burr-free cutting. Features a material safety stop and 6 converging lubrication jets for self-cleansing.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6-PM FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in" style="transition-delay: 200ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6-PM</h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 6.35 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Mobile Counter-Collet</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Combines the high-volume robust platform of the V6 with a fully integrated mobile counter-collet system. Designed for rapid, continuous turning of medium/large series using tough materials.
+              </p>
+            </div>
+          </div>
+
+          <!-- V6SR1A FlexCam -->
+          <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 fade-in" style="transition-delay: 250ms;">
+            <div class="flex justify-between items-start mb-6">
+              <h3 class="font-display text-[32px] font-bold text-on-surface leading-none">V6SR1A</h3>
+              <span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-3 py-1 rounded-full border border-secondary/20">Mechanical Cam</span>
+            </div>
+            <div class="flex flex-col gap-4 flex-grow">
+              <div class="flex flex-col gap-1 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specs</span>
+                <span class="font-body-md font-medium text-on-surface">Cap. up to ø 6.35 mm</span>
+              </div>
+              <div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">System</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">4-Spindle Turret</span>
+                  <span class="text-xs font-semibold bg-surface-container px-2 py-1 rounded text-on-surface">Advanced Cams</span>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">
+                Engineered for complex parts needing boring, tapping, threading, or milling. 4-station turret. Threading spindle rotation speed is programmed via touch screen and driven by an auxiliary motor for flawless threading.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GLOBAL SPECIFICATIONS & ADVANTAGES (Bento Style) -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-inverse-surface text-inverse-on-surface">
+      <div class="max-w-6xl w-full flex flex-col gap-12 fade-in">
+        <h2 class="font-headline-xl text-headline-xl font-bold text-white text-center mb-4">SoftCam Series Advantages</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Type of Uses Bento -->
+          <div class="bg-surface/10 backdrop-blur-md rounded-2xl p-10 border border-white/10 flex flex-col gap-6">
+            <div class="flex items-center gap-4 border-b border-white/10 pb-6">
+              <div class="bg-primary/20 p-3 rounded-lg">
+                <span class="material-symbols-outlined text-[32px] text-inverse-primary">integration_instructions</span>
+              </div>
+              <h3 class="font-headline-lg text-[28px] font-bold text-white">Type of Uses</h3>
+            </div>
+            <ul class="flex flex-col gap-4 pt-2">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed">chevron_right</span>
+                <span class="font-body-lg text-lg text-on-primary-container">Simple & complex parts</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed">chevron_right</span>
+                <span class="font-body-lg text-lg text-on-primary-container">Coil stock operations</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed">chevron_right</span>
+                <span class="font-body-lg text-lg text-on-primary-container">Non-stop 24h/7 production</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed">chevron_right</span>
+                <span class="font-body-lg text-lg text-on-primary-container">Short cycles</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed">chevron_right</span>
+                <span class="font-body-lg text-lg text-on-primary-container">Easy process adaptation</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Key Benefits Bento -->
+          <div class="bg-surface/10 backdrop-blur-md rounded-2xl p-10 border border-white/10 flex flex-col gap-6">
+            <div class="flex items-center gap-4 border-b border-white/10 pb-6">
+              <div class="bg-primary/20 p-3 rounded-lg">
+                <span class="material-symbols-outlined text-[32px] text-inverse-primary">workspace_premium</span>
+              </div>
+              <h3 class="font-headline-lg text-[28px] font-bold text-white">Key Benefits</h3>
+            </div>
+            <ul class="flex flex-col gap-4 pt-2">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-fixed mt-1">task_alt</span>
+                <span class="font-body-lg text-lg text-on-primary-container leading-snug">No more manual cam cutting or changing.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-fixed mt-1">task_alt</span>
+                <span class="font-body-lg text-lg text-on-primary-container leading-snug">Same high-quality tool-head as FlexCam (optional 10K or 12K RPM).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-fixed mt-1">task_alt</span>
+                <span class="font-body-lg text-lg text-on-primary-container leading-snug">Huge material savings due to radically reduced coil offcuts.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-fixed mt-1">task_alt</span>
+                <span class="font-body-lg text-lg text-on-primary-container leading-snug">Rework avoided thanks to burr-free cutting technology.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXTUAL CTA FOOTER -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-4xl w-full text-center flex flex-col items-center gap-8 fade-in">
+        <span class="material-symbols-outlined text-[64px] text-primary">engineering</span>
+        <h2 class="font-headline-xl text-headline-xl font-bold text-on-background">Explore Our Turning Solutions</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Interested in upgrading your production line with SoftCam flexibility or FlexCam high-volume efficiency? Contact our Swiss engineering team for a feasibility study and custom quote.
+        </p>
+        <a href="/src/pages/contact/index.html?interest=lathes" class="mt-4 bg-primary text-white font-button text-button uppercase tracking-wider px-10 py-5 rounded-full hover:bg-primary/90 transition-colors duration-300 shadow-md flex items-center justify-center gap-2">
+          Request Lathes Consultation
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  {{> footer base="../.." }}
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

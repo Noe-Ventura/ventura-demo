@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact & Quote - Ventura Mecanics SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="../.." }}
+
+  <!-- Main Content -->
+  <main class="flex-grow w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center justify-center gap-24">
+    
+    <div class="w-full max-w-3xl flex flex-col items-center text-center">
+      <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-on-background mb-4">Contact Us</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Connect with our Swiss engineering team or our global partners for precision solutions, retrofits, and custom tooling inquiries.
+      </p>
+    </div>
+
+    <!-- 1. Headquarters Section -->
+    <section class="w-full max-w-4xl flex flex-col gap-6">
+      <h2 class="font-headline-lg text-headline-lg text-on-background border-b border-outline-variant/30 pb-4 w-full">Headquarters</h2>
+      <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col md:flex-row gap-8 items-start">
+        <div class="flex-1 flex flex-col gap-4">
+          <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">Ventura Mecanics S.A.</h3>
+          <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+            <span>Rue du Verger 9</span>
+            <span>2014 Bôle</span>
+            <span>SWITZERLAND</span>
+          </div>
+          <a href="mailto:info@ventura-sa.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">mail</span> info@ventura-sa.com
+          </a>
+          <div class="flex flex-col gap-1 mt-2">
+            <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">call</span> +41 32 855 25 10
+            </span>
+            <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">fax</span> +41 32 855 25 13
+            </span>
+          </div>
+        </div>
+        <div class="flex-1 w-full rounded-lg overflow-hidden border border-outline-variant/30 aspect-video relative">
+           <iframe class="absolute inset-0 w-full h-full" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Rue%20du%20Verger%209,%202014%20B%C3%B4le,%20SWITZERLAND&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. International Representation Section -->
+    <section class="w-full max-w-5xl flex flex-col gap-6">
+      <h2 class="font-headline-lg text-headline-lg text-on-background border-b border-outline-variant/30 pb-4 w-full">International Representation</h2>
+      
+      <!-- Tabs Navigation -->
+      <div class="w-full border-b border-outline-variant/30 overflow-x-auto hide-scrollbar">
+        <div class="flex gap-2 min-w-max pb-2" id="rep-tabs">
+          <button onclick="switchTab('germany')" id="tab-germany" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-primary text-white transition-all">Germany</button>
+          <button onclick="switchTab('france')" id="tab-france" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">France</button>
+          <button onclick="switchTab('spain')" id="tab-spain" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">Spain</button>
+          <button onclick="switchTab('china')" id="tab-china" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">China</button>
+          <button onclick="switchTab('seasia')" id="tab-seasia" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">SE Asia</button>
+          <button onclick="switchTab('taiwan')" id="tab-taiwan" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">Taiwan</button>
+          <button onclick="switchTab('usa')" id="tab-usa" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">USA</button>
+          <button onclick="switchTab('mexico')" id="tab-mexico" class="rep-tab-btn px-6 py-3 font-label-sm uppercase tracking-wider font-bold rounded-t-lg bg-surface text-on-surface-variant hover:bg-surface-container transition-all">Mexico</button>
+        </div>
+      </div>
+
+      <!-- Tab Contents -->
+      <div class="relative w-full min-h-[300px]">
+        
+        <!-- Germany -->
+        <div id="content-germany" class="rep-tab-content block animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">DIXI POLYTOOL GMBH</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>Karl-Benz Strasse 11</span>
+              <span>75217 Birkenfeld</span>
+              <span>DEUTSCHLAND</span>
+            </div>
+            <a href="http://www.dixipolytool.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">language</span> www.dixipolytool.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +49 7231 168 980
+              </span>
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">fax</span> +49 7231 339 19
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- France -->
+        <div id="content-france" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">SIDI-ROLLIER</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>265, Rue de la Grange</span>
+              <span>74950 Scionzier</span>
+              <span>FRANCE</span>
+            </div>
+            <a href="mailto:spidirollier@spidi-rollier.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span> spidirollier@spidi-rollier.com
+            </a>
+            <a href="http://www.spidi-rollier.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">language</span> www.spidi-rollier.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +33 450 98 02 09
+              </span>
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">fax</span> +33 450 96 28 29
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spain -->
+        <div id="content-spain" class="rep-tab-content hidden animate-fade-in">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+              <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">DIXI-POLYTOOL SPAIN SL</h3>
+              <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+                <span>Bailen 141 Esc. D, Entl. 5A</span>
+                <span>08037 Barcelona, ESPAÑA</span>
+              </div>
+              <a href="mailto:robert.broquetas@dixi.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">mail</span> robert.broquetas@dixi.com
+              </a>
+              <a href="http://www.dixipolytool.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">language</span> www.dixipolytool.com
+              </a>
+              <div class="flex flex-col gap-1 mt-2">
+                <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px]">call</span> +34 678 917 351
+                </span>
+              </div>
+            </div>
+
+            <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+              <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">DAUNERT MAQUINAS HERRAMIENTAS S.A.</h3>
+              <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+                <span>Tirso de Molina 7-9-11</span>
+                <span>08940 Cornella de Llobregat, ESPAÑA</span>
+              </div>
+              <a href="mailto:info@daunert.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">mail</span> info@daunert.com
+              </a>
+              <a href="http://www.daunert.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">language</span> www.daunert.com
+              </a>
+              <div class="flex flex-col gap-1 mt-2">
+                <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px]">call</span> +34 934 751 480
+                </span>
+                <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px]">fax</span> +34 933 776 464
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- China -->
+        <div id="content-china" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">REGO-FIX Precision Tools (Shanghai) Co., Ltd.</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>Building 3, Room 363</span>
+              <span>1388 Jiangyue Road, Minhang District</span>
+              <span>201114 Shanghai, CHINA</span>
+            </div>
+            <a href="mailto:sales@rego-fix.cn" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span> sales@rego-fix.cn
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +86 021 6221 7628
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SE Asia -->
+        <div id="content-seasia" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">MUNGER MACHINE TOOL PTE LTD</h3>
+            <span class="font-label-sm text-primary/70 uppercase font-bold tracking-wider mb-2">Singapore - Malaysia - Thailand - Indonesia</span>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>63 Hillview Avenue</span>
+              <span>#07-02 Lam Soon Industrial Building</span>
+              <span>Singapore 669569, SINGAPORE</span>
+            </div>
+            <div class="flex flex-col gap-1 mt-2">
+              <a href="mailto:sales@mungermachinetool.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">mail</span> sales@mungermachinetool.com
+              </a>
+              <a href="mailto:service@mungermachinetool.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">support_agent</span> service@mungermachinetool.com
+              </a>
+            </div>
+            <a href="http://www.mungermachinetool.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-1 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">language</span> www.mungermachinetool.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +65 6764 6388
+              </span>
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">fax</span> +65 6764 3318
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taiwan -->
+        <div id="content-taiwan" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">LON-GINE PRECISION INDUSTRY CO., LTD.</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>No 168, Erh-Kan Road</span>
+              <span>Wai-Pu District</span>
+              <span>43858 Taichung City, TAIWAN</span>
+            </div>
+            <a href="mailto:sales@longine-precision.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span> sales@longine-precision.com
+            </a>
+            <a href="http://www.longine-precision.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">language</span> www.longine-precision.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +886 4 2683 7968
+              </span>
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">fax</span> +886 4 2683 7967
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- USA -->
+        <div id="content-usa" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">SWISSET TOOL COMPANY</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>32, Eastgate Park Road #2</span>
+              <span>03220 Belmont NH, UNITED STATES</span>
+            </div>
+            <a href="mailto:sales@swissettool.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span> sales@swissettool.com
+            </a>
+            <a href="http://www.swissettool.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">language</span> www.swissettool.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +1 603-524-0082
+              </span>
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">fax</span> +1 603-524-2210
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mexico -->
+        <div id="content-mexico" class="rep-tab-content hidden animate-fade-in">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
+            <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">FRAVIC DAUNERT</h3>
+            <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
+              <span>Real de ángeles Nº 206</span>
+              <span>CP 42086 Pachuca de Soto, Estado Hidalgo</span>
+              <span>MEXICO</span>
+            </div>
+            <div class="mt-2 text-on-surface font-bold">Mr. Guillermo Ramirez Alvarez</div>
+            <a href="mailto:guillermo@grupofravic.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">mail</span> guillermo@grupofravic.com
+            </a>
+            <div class="flex flex-col gap-1 mt-2">
+              <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +52 771 220 9921
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Request a Quote Form -->
+    <section class="w-full max-w-4xl flex flex-col items-center">
+      <h2 class="font-headline-lg text-headline-lg text-on-background border-b border-outline-variant/30 pb-4 mb-8 w-full text-center">Request a Quote</h2>
+      <div class="w-full bg-surface-container rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/30">
+        <form class="flex flex-col gap-8" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Replace with your actual Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <!-- Prevent spam -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="firstName">FIRST NAME</label>
+              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="firstName" name="firstName" placeholder="John" type="text" required/>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="lastName">LAST NAME</label>
+              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="lastName" name="lastName" placeholder="Doe" type="text" required/>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="company">COMPANY</label>
+              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="company" name="company" placeholder="Ventura Mecanics SA" type="text" required/>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="email">EMAIL ADDRESS</label>
+              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="email" name="email" placeholder="john.doe@example.com" type="email"/>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="inquiryType">INQUIRY TYPE</label>
+            <select class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="inquiryType" name="inquiryType">
+              <option value="revision">Spindle Revision</option>
+              <option value="retrofit">Lathe Retrofit</option>
+              <option value="new_machine">New Machine Inquiry</option>
+              <option value="parts">Spare Parts</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="message">MESSAGE</label>
+            <textarea class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="message" name="message" placeholder="I am interested in a revision for my Escomatic Spindle type [Model]..." rows="4"></textarea>
+          </div>
+          <div class="flex justify-center mt-4">
+            <button class="bg-primary-container text-white font-label-sm text-label-sm uppercase tracking-wider px-12 py-4 rounded-full hover:bg-primary-container/90 transition-colors duration-300 flex items-center gap-2" type="submit">
+              <span class="text-white">Send Quote Request</span>
+              <span class="material-symbols-outlined text-[18px] text-white" data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  {{> footer base="../.." }}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const inquiryTypeSelect = document.getElementById('inquiryType');
+        const messageTextarea = document.getElementById('message');
+
+        if(inquiryTypeSelect && messageTextarea) {
+            inquiryTypeSelect.addEventListener('change', (e) => {
+                const type = e.target.value;
+                switch(type) {
+                    case 'revision':
+                        messageTextarea.placeholder = "I am interested in a revision for my Escomatic Spindle type [Model]...";
+                        break;
+                    case 'retrofit':
+                        messageTextarea.placeholder = "I want to retrofit my legacy Lathe model [Model Name]...";
+                        break;
+                    case 'new_machine':
+                        messageTextarea.placeholder = "I am requesting information and pricing for a new [Machine Type]...";
+                        break;
+                    case 'parts':
+                        messageTextarea.placeholder = "I need a quote for the following spare parts: [Part Numbers]...";
+                        break;
+                    default:
+                        messageTextarea.placeholder = "How can we help you today?";
+                }
+            });
+        }
+    });
+
+    // Tab Switching Logic
+    window.switchTab = function(tabId) {
+        // 1. Hide all contents
+        const contents = document.querySelectorAll('.rep-tab-content');
+        contents.forEach(content => {
+            content.classList.remove('block');
+            content.classList.add('hidden');
+        });
+
+        // 2. Reset all buttons to inactive styling
+        const buttons = document.querySelectorAll('.rep-tab-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-white');
+            btn.classList.add('bg-surface', 'text-on-surface-variant');
+        });
+
+        // 3. Show target content
+        const targetContent = document.getElementById(`content-${tabId}`);
+        if(targetContent) {
+            targetContent.classList.remove('hidden');
+            targetContent.classList.add('block');
+        }
+
+        // 4. Set target button to active styling
+        const targetBtn = document.getElementById(`tab-${tabId}`);
+        if(targetBtn) {
+            targetBtn.classList.remove('bg-surface', 'text-on-surface-variant');
+            targetBtn.classList.add('bg-primary', 'text-white');
+        }
+    };
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

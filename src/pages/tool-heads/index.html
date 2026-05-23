@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tool-Heads Services - Ventura Mecanics SA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
+  
+  {{> header base="../.." }}
+
+  <main class="flex-grow w-full flex flex-col items-center">
+    
+    <!-- 1. HERO OVERVIEW SECTION -->
+    <section class="relative overflow-hidden w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-inverse-surface text-inverse-on-surface">
+      
+      <!-- Background Videos -->
+      <div class="absolute inset-0 z-0 w-full h-full opacity-[0.35] pointer-events-none">
+        <video src="/assets/video/2026_VENTURA_BROCHE_30sec.mp4" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+      </div>
+      <!-- Bottom blend mask -->
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/50 to-transparent pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-6xl w-full flex flex-col items-center gap-12 text-center fade-in">
+        <div class="flex flex-col items-center gap-6">
+          <h1 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg font-bold tracking-tight text-white">Tool-Heads Services</h1>
+          <p class="font-body-lg text-body-lg text-on-primary-container max-w-3xl mx-auto">
+            Engineered for absolute precision and performance. Discover our comprehensive tool-head services for Escomatic® and Ventura® lathes.
+          </p>
+          <a href="/assets/PDFs/Ventura-AG-ToolHeads-Locked.pdf" target="_blank" class="mt-4 bg-primary-container text-white border border-primary/50 font-button text-button uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary transition-colors duration-300 flex items-center justify-center gap-2 shadow-lg w-fit mx-auto md:mx-0">
+            Tool-Heads Application Guide
+            <span class="material-symbols-outlined text-[18px]">download</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left mt-8">
+          <a href="#overhaul" class="relative overflow-hidden bg-surface/10 backdrop-blur-sm rounded-xl border border-white/10 flex flex-col hover:border-white/40 transition-all duration-300 min-h-[250px] group">
+            <img src="/assets/mand-revis1.png" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-105" alt="Complete Tool-Head Overhaul">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 z-10"></div>
+            <div class="relative z-20 mt-auto p-8 flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-white drop-shadow-md">Complete Tool-Head Overhaul</h3>
+              <p class="font-body-md text-body-md text-white/90 drop-shadow-sm">For Escomatic® and Ventura® Lathes (Models: R – R2 – HW / H – D6 – RT – NM).</p>
+            </div>
+          </a>
+          <a href="#new-refurbished" class="relative overflow-hidden bg-surface/10 backdrop-blur-sm rounded-xl border border-white/10 flex flex-col hover:border-white/40 transition-all duration-300 min-h-[250px] group">
+            <img src="/assets/IMG_0911_d6-Photoroom%201.png" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-105" alt="New & Refurbished Tool-Heads">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 z-10"></div>
+            <div class="relative z-20 mt-auto p-8 flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-white drop-shadow-md">New & Refurbished Tool-Heads</h3>
+              <p class="font-body-md text-body-md text-white/90 drop-shadow-sm">For Escomatic® and Ventura® Lathes (Models: R – R2 – HW / H – D6 – RT).</p>
+            </div>
+          </a>
+          <a href="#upgrades" class="relative overflow-hidden bg-surface/10 backdrop-blur-sm rounded-xl border border-white/10 flex flex-col hover:border-white/40 transition-all duration-300 min-h-[250px] group">
+            <img src="/assets/Frame%2015.png" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-105" alt="Tool-Head Upgrades">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 z-10"></div>
+            <div class="relative z-20 mt-auto p-8 flex flex-col gap-2">
+              <h3 class="font-headline-md text-headline-md font-bold text-white drop-shadow-md">Tool-Head Upgrades</h3>
+              <p class="font-body-md text-body-md text-white/90 drop-shadow-sm">For Escomatic® and Ventura® Lathes (Models: R – R2 – HW).</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. DEEP DIVE SECTION: COMPLETE TOOL-HEAD OVERHAUL -->
+    <section id="overhaul" class="w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-surface-container-lowest scroll-mt-20">
+      <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start fade-in">
+        <div class="flex flex-col gap-6">
+          <h2 class="font-headline-lg text-headline-lg font-bold text-on-background">Complete Tool-Head Overhaul</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Specialized in overhauling Escomatic® tool-heads backed by 40 years of experience to provide quality service for precision and productivity.
+          </p>
+          
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="font-body-md text-body-md text-on-surface font-medium">Refurbishment of Escomatic® tool-heads</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="font-body-md text-body-md text-on-surface font-medium">CNC-ground raceways</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="font-body-md text-body-md text-on-surface font-medium">Quality control measures (Roundness testing with Taylor-Hobson equipment, Profile and roughness testing using Mitutoyo technology)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="font-body-md text-body-md text-on-surface font-medium">Honing to improve service life</span>
+            </li>
+          </ul>
+
+          <div class="mt-6 pt-6 border-t border-outline-variant/30">
+            <h4 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-3">Compatibility List</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D2/D4/D5</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D2 CNC UP</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">Flexspeed D2/D5</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">Rotomatic</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D6</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D2/D5 CNC</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D5 CNC ULTRA</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">D5 TWIN</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded">New Mach</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex flex-col gap-2 fade-in" style="transition-delay: 100ms;">
+            <span class="font-display text-display font-bold text-primary">800+</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Experienced Team</span>
+            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Escomatic® and Ventura® rotary heads overhauled yearly.</p>
+          </div>
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex flex-col gap-2 fade-in" style="transition-delay: 200ms;">
+            <span class="font-display text-display font-bold text-primary">4-8w</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Timely Delivery</span>
+            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Reliable 4 to 8 weeks turnaround for overhaul services.</p>
+          </div>
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex flex-col gap-2 fade-in" style="transition-delay: 300ms;">
+            <span class="material-symbols-outlined text-[48px] text-primary mb-2">build</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Comprehensive Solutions</span>
+            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Support for models R, R2, HW, H, D6, RT, NM.</p>
+          </div>
+          <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 flex flex-col gap-2 fade-in" style="transition-delay: 400ms;">
+            <span class="material-symbols-outlined text-[48px] text-primary mb-2">swap_horiz</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Flexible Options</span>
+            <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Standard exchange service upon request to minimize downtime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 VIDEO SHOWCASE -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-6xl w-full rounded-2xl overflow-hidden border border-outline-variant/30 shadow-xl relative aspect-[21/9] md:aspect-video fade-in">
+        <video src="/assets/video/2026_VENTURA_BROCHE_2.mp4" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-12 pointer-events-none">
+          <h3 class="font-headline-lg text-headline-lg md:font-display-sm md:text-display-sm font-bold text-white drop-shadow-lg">Precision in Motion</h3>
+          <p class="font-body-lg text-white/90 max-w-2xl drop-shadow-md mt-2">Watch the Ventura tool-head deliver unparalleled rotational stability and continuous performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DEEP DIVE SECTION: NEW & REFURBISHED TOOL-HEADS -->
+    <section id="new-refurbished" class="w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-surface-container-low scroll-mt-20">
+      <div class="max-w-6xl w-full flex flex-col gap-12 fade-in">
+        <div class="text-center">
+          <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-4">New & Refurbished Tool-Heads</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Available for supported models: R, R2, HW, H, D6, RT.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-surface-container-lowest rounded-xl p-10 border border-outline-variant/30 flex flex-col gap-4 shadow-sm fade-in">
+            <span class="material-symbols-outlined text-[40px] text-primary">new_releases</span>
+            <h3 class="font-headline-md text-headline-md font-bold text-on-surface">New Tool-Heads</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Precision-manufactured to exacting standards for optimal, brand-new performance.</p>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-10 border border-outline-variant/30 flex flex-col gap-4 shadow-sm fade-in" style="transition-delay: 100ms;">
+            <span class="material-symbols-outlined text-[40px] text-primary">recycling</span>
+            <h3 class="font-headline-md text-headline-md font-bold text-on-surface">Refurbished Tool-Heads</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Cost-effective restoration of existing units, carefully rebuilt to high tolerances.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 mt-4 fade-in">
+          <h4 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold mb-6">Compatible Lathes</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col gap-3">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">ESCOMATIC®</span>
+              <ul class="flex flex-wrap gap-2">
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D2/D4/D5</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D2 CNC UP</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">Flexspeed D2/D5</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">Rotomatic</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D6</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D2/D5 CNC</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D5 CNC ULTRA</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">D5 TWIN</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">VENTURA®</span>
+              <ul class="flex flex-wrap gap-2">
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">Softcam V2/V4/V5/V6</li>
+                <li class="font-label-sm text-label-sm text-on-surface bg-surface-container-lowest px-3 py-1 border border-outline-variant/20 rounded">Flexcam V2/V4/V5/V6</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 mt-4 fade-in">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">Taylor-Hobson Talyrond Testing</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">Mitutoyo Profile & Roughness</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">Extended Service Life Honing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DEEP DIVE SECTION: TOOL-HEADS UPGRADES -->
+    <section id="upgrades" class="w-full px-margin-mobile md:px-margin-desktop py-section-padding flex flex-col items-center bg-inverse-surface text-inverse-on-surface scroll-mt-20">
+      <div class="max-w-6xl w-full flex flex-col gap-16 fade-in">
+        <div class="text-center">
+          <h2 class="font-headline-lg text-headline-lg font-bold text-white mb-4">Tool-Heads Upgrades</h2>
+          <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
+            Two innovative upgrade options to radically enhance your Escomatic® lathe performance.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-surface/10 backdrop-blur-sm rounded-xl p-10 border border-white/10 flex flex-col gap-6 fade-in">
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Upgrade 1</span>
+              <h3 class="font-headline-md text-headline-md font-bold text-white">High-Speed Tool-Head</h3>
+              <span class="font-display text-display font-bold text-inverse-primary my-2">10,000 RPM</span>
+            </div>
+            <ul class="flex flex-col gap-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">speed</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Boosts production speed significantly.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">check</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Compatible with existing models.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">construction</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Simple installation using a transformation kit.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">currency_exchange</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Trade-in option available (price reduction for your old tool-head).</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-surface/10 backdrop-blur-sm rounded-xl p-10 border border-white/10 flex flex-col gap-6 fade-in" style="transition-delay: 100ms;">
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Upgrade 2</span>
+              <h3 class="font-headline-md text-headline-md font-bold text-white">Hexagonal Tool-Holder System</h3>
+              <span class="font-display text-display font-bold text-inverse-primary my-2">Cermet Inserts</span>
+            </div>
+            <ul class="flex flex-col gap-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">autorenew</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Replaces traditional tool-holders.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">precision_manufacturing</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Includes mounting tool support for easy tool changes.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">tune</span>
+                <span class="font-body-md text-body-md text-on-primary-container">Enables use of cermet inserts; versatile for diverse needs.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-inverse-primary mt-1">link</span>
+                <span class="font-body-md text-body-md text-on-primary-container">100% compatible with our 10,000 RPM high-speed head.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-primary-container text-white rounded-xl p-8 border border-primary flex justify-center fade-in">
+          <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-center">
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Increased Productivity</span>
+            <span class="hidden md:inline text-on-primary-container">•</span>
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Enhanced Flexibility</span>
+            <span class="hidden md:inline text-on-primary-container">•</span>
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Improved Tool Life</span>
+            <span class="hidden md:inline text-on-primary-container">•</span>
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Easy Maintenance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTEXTUAL CTA FOOTER -->
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-lowest">
+      <div class="max-w-4xl w-full text-center flex flex-col items-center gap-8 fade-in">
+        <span class="material-symbols-outlined text-[64px] text-primary">support_agent</span>
+        <h2 class="font-headline-xl text-headline-xl font-bold text-on-background">Ready to Optimize Your Lathe?</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Contact us to discuss which upgrade or overhaul best suits your production requirements and to receive a personalized quote.
+        </p>
+        <a href="/src/pages/contact/index.html?interest=tool-heads" class="mt-4 bg-primary text-white font-button text-button uppercase tracking-wider px-10 py-5 rounded-full hover:bg-primary/90 transition-colors duration-300 shadow-md flex items-center justify-center gap-2">
+          Request a Quote for Tool-Heads
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  {{> footer base="../.." }}
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "ventura-mecanics-website",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ventura Mecanics SA - Precision Engineering Website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "sharp": "^0.33.5",
+    "svgo": "^4.0.1",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.11",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-image-optimizer": "^1.1.9"
+  }
+}
