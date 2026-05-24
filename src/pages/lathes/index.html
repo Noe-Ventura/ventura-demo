@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Ventura® Lathes - Ventura Mecanics SA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/index.css" />
-</head>
+  {{> head title="Ventura® Lathes - Ventura Mecanics SA" description="Explore Ventura Mechanical and CNC Lathes for small diameter precision turned parts from 0.3 to 8mm." canonicalPath="/src/pages/lathes/" }}
 <body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
   
   {{> header base="../.." }}
@@ -49,14 +40,12 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in">
-            <img src="/assets/Vector Machine Angle.png" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="SoftCam CNC Lathe" />
+          <a href="#softcam-lineup" class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in hover:shadow-xl cursor-pointer transition-all duration-300">
+            <img src="/assets/Vector Machine Angle.png" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="SoftCam CNC Lathe" />
             <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
-            <div class="absolute top-0 left-0 w-1 h-full bg-primary z-20 group-hover:w-2 transition-all duration-300"></div>
             
             <div class="relative z-20 flex flex-col gap-2">
               <div class="flex items-center gap-3 mb-2">
-                <span class="material-symbols-outlined text-[32px] text-primary bg-surface/50 backdrop-blur p-2 rounded-full shadow-sm">memory</span>
                 <span class="font-label-sm text-[11px] text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm uppercase tracking-widest font-bold">Virtual Cams Algorithm</span>
               </div>
               <h3 class="font-headline-md text-headline-md font-bold text-on-surface">SoftCam CNC</h3>
@@ -64,16 +53,14 @@
                 Engineered for absolute production flexibility and higher productivity. Ideal for frequent setups, complex part geometries, and rapid changeovers without sacrificing speed.
               </p>
             </div>
-          </div>
+          </a>
           
-          <div class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in" style="transition-delay: 100ms;">
-            <img src="/assets/flexcam-v2.jpg" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="FlexCam Mechanical Lathe" />
+          <a href="#flexcam-lineup" class="relative w-full rounded-2xl overflow-hidden min-h-[400px] flex flex-col justify-end p-8 mt-8 border border-outline-variant/30 shadow-lg group fade-in hover:shadow-xl cursor-pointer transition-all duration-300" style="transition-delay: 100ms;">
+            <img src="/assets/flexcam-v2.jpg" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" alt="FlexCam Mechanical Lathe" />
             <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
-            <div class="absolute top-0 left-0 w-1 h-full bg-secondary z-20 group-hover:w-2 transition-all duration-300"></div>
             
             <div class="relative z-20 flex flex-col gap-2">
               <div class="flex items-center gap-3 mb-2">
-                <span class="material-symbols-outlined text-[32px] text-secondary bg-surface/50 backdrop-blur p-2 rounded-full shadow-sm">settings_applications</span>
                 <span class="font-label-sm text-[11px] text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm uppercase tracking-widest font-bold">Mechanical Cams System</span>
               </div>
               <h3 class="font-headline-md text-headline-md font-bold text-on-surface">FlexCam Mechanical</h3>
@@ -81,7 +68,7 @@
                 Designed for large production series. Delivers ultra-optimized, high-volume efficiency to achieve the absolute lowest cost per part in continuous manufacturing.
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -98,7 +85,7 @@
     </section>
 
     <!-- SECTION 2: SOFTCAM CNC LINEUP (THE 6 MODELS) -->
-    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface">
+    <section id="softcam-lineup" class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface">
       <div class="max-w-7xl w-full flex flex-col gap-16">
         <div class="text-center fade-in">
           <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold mb-2 block">Flagship Series</span>
@@ -107,6 +94,10 @@
             A comprehensive range of 6 advanced CNC models featuring our proprietary Virtual Cam System. 
             Experience mechanical cycle times with CNC versatility.
           </p>
+        </div>
+
+        <div class="w-full flex justify-center fade-in">
+          <img src="/assets/softcam-line.png" class="max-w-full h-auto object-contain mix-blend-multiply" alt="SoftCam Lineup Overview" />
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -263,7 +254,7 @@
     </section>
 
     <!-- SECTION 3: FLEXCAM MECHANICAL LINEUP -->
-    <section class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-low border-y border-outline-variant/20">
+    <section id="flexcam-lineup" class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col items-center bg-surface-container-low border-y border-outline-variant/20">
       <div class="max-w-7xl w-full flex flex-col gap-16">
         <div class="text-center fade-in">
           <div class="flex items-center justify-center gap-3 mb-2">
@@ -275,6 +266,10 @@
             For dedicated, large-scale production runs, our FlexCam series utilizes an ultra-optimized <strong>Mechanical Cam System</strong>. 
             Every SoftCam model has an identical FlexCam twin sharing the exact same structural footprints and tool capacities.
           </p>
+        </div>
+
+        <div class="w-full flex justify-center fade-in">
+          <img src="/assets/flexcam-line.png" class="max-w-full h-auto object-contain mix-blend-multiply" alt="FlexCam Lineup Overview" />
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

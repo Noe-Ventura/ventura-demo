@@ -1,6 +1,10 @@
+{{#if link}}
+<a href="{{link}}" class="block bg-[#00A3E0]/5 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden min-h-[400px] group cursor-pointer">
+{{else}}
 <div class="bg-[#00A3E0]/5 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden min-h-[400px] group">
+{{/if}}
   {{#if image}}
-  <img src="{{image}}" alt="{{title}}" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" />
+  <img src="{{image}}" alt="{{title}}" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-700" />
   {{/if}}
   
   <div class="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-surface via-surface/95 via-40% to-transparent z-10 pointer-events-none"></div>
@@ -21,9 +25,13 @@
     </p>
     
     {{#if link}}
-    <a href="{{link}}" class="text-primary font-bold font-button text-button hover:underline mt-6 flex items-center gap-1 w-fit">
+    <span class="text-primary font-bold font-button text-button group-hover:underline mt-6 flex items-center gap-1 w-fit">
       Explore <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-    </a>
+    </span>
     {{/if}}
   </div>
+{{#if link}}
+</a>
+{{else}}
 </div>
+{{/if}}

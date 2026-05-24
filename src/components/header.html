@@ -16,7 +16,7 @@
   
   <div class="flex items-center justify-end gap-4 flex-1">
     
-    <!-- Language Switcher -->
+    <!-- Language Switcher (Disabled pending translations)
     <div class="relative group">
       <button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-sm font-bold uppercase tracking-wider px-2 py-1">
         <span class="material-symbols-outlined text-[18px]">language</span>
@@ -24,7 +24,6 @@
         <span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
       </button>
       
-      <!-- Dropdown Menu -->
       <div class="absolute right-0 mt-2 w-32 bg-surface-container rounded-xl shadow-lg border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right z-50">
         <div class="py-2 flex flex-col">
           <a href="#" class="px-4 py-2 font-label-sm uppercase font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors flex justify-between items-center">
@@ -40,9 +39,23 @@
         </div>
       </div>
     </div>
+    -->
 
-    <button class="md:hidden text-on-background">
-      <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    <button id="mobile-menu-button" class="md:hidden text-on-background" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span class="material-symbols-outlined" data-icon="menu" aria-hidden="true">menu</span>
     </button>
   </div>
 </nav>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-menu-drawer" class="fixed inset-0 top-20 bg-surface/98 backdrop-blur-lg z-40 md:hidden flex flex-col px-margin-mobile py-8 gap-6 border-b border-outline-variant/20 transform -translate-y-full opacity-0 invisible transition-all duration-300 ease-in-out">
+  <div class="flex flex-col gap-6">
+    <a class="text-on-surface font-semibold hover:text-primary transition-all duration-300 font-display text-xl uppercase" href="/src/pages/tool-heads/index.html">Tool-Heads</a>
+    <a class="text-on-surface font-semibold hover:text-primary transition-all duration-300 font-display text-xl uppercase" href="/src/pages/lathes/index.html">Lathes</a>
+    <a class="text-on-surface font-semibold hover:text-primary transition-all duration-300 font-display text-xl uppercase" href="/src/pages/parts-equipment/index.html">Parts & Equipment</a>
+    <a class="text-on-surface font-semibold hover:text-primary transition-all duration-300 font-display text-xl uppercase" href="/src/pages/about-us/index.html">About us</a>
+    <a class="text-on-surface font-semibold hover:text-primary transition-all duration-300 font-display text-xl uppercase" href="/src/pages/downloads/index.html">Downloads</a>
+    <div class="h-px bg-outline-variant/20 my-2"></div>
+    <a class="text-primary font-bold hover:text-primary/80 transition-all duration-300 font-display text-xl uppercase" href="/src/pages/contact/index.html">Contact us</a>
+  </div>
+</div>

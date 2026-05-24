@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Technical Downloads - Ventura Mecanics SA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/index.css" />
-</head>
+  {{> head title="Technical Downloads - Ventura Mecanics SA" description="Access our comprehensive collection of application guides, productivity insights, and equipment brochures for Escomatic® and Ventura® machines." canonicalPath="/src/pages/downloads/" }}
 <body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
   
   {{> header base="../.." }}
@@ -39,9 +30,9 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             14 Models | 7 SoftCam CNC Lathes with Virtual Cams | 7 Flexcam Automatic Lathes with Mechanical Cams.
           </p>
-          <a href="/assets/PDFs/Ventura-AG-Lathes-Locked.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/Ventura-AG-Lathes-Locked.pdf', 'Application Guide - Lathes')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
         <!-- Document 2 -->
@@ -53,9 +44,9 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             Tool-Heads R – R2 – HW / H – D6 – RT – NM | For Escomatic® and Ventura® Lathes | Overhaul Service, Refurbished and Manufactured New.
           </p>
-          <a href="/assets/PDFs/Ventura-AG-ToolHeads-Locked.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/Ventura-AG-ToolHeads-Locked.pdf', 'Application Guide - Tool-Heads')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
         <!-- Document 3 -->
@@ -67,9 +58,9 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             Overview for Management: Benefits of Virtual Cams in retrofitted Escomatic® Lathes | Overview for Operators: Controls, set-up, part programming and production.
           </p>
-          <a href="/assets/PDFs/EN - Productivity Guide 17 - HR.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/EN - Productivity Guide 17 - HR.pdf', 'Productivity Guide - SoftCam')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
         <!-- Document 4 -->
@@ -81,9 +72,9 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             Focus on high-end models: V6 – V6PM – V6SR1A | 3 Fully Independent Turning Tools | Material Advance Controlled by Accurate Ball Screw | Optional 4 Station Turret.
           </p>
-          <a href="/assets/PDFs/Ventura-AG-Softcam-Locked.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/Ventura-AG-Softcam-Locked.pdf', 'SoftCam Lathes Brochure')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
         <!-- Document 5 -->
@@ -95,9 +86,9 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             Adaptable to all Escomatic® D2, D4, D5 Automatic Lathes | Increased productivity and Surface Finish.
           </p>
-          <a href="/assets/PDFs/mandrin-kit-en_v2.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/mandrin-kit-en_v2.pdf', 'HW 10000 RPM Upgrade Kit')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
         <!-- Document 6 -->
@@ -109,14 +100,99 @@
           <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
             For Removable, Insertable From Tip Holders | Easy & Rapid Tool Change | Knurling & Cermet Inserts options.
           </p>
-          <a href="/assets/PDFs/mandrin-hexagonal-en_v2.pdf" target="_blank" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+          <button onclick="openDialog('/assets/PDFs/mandrin-hexagonal-en_v2.pdf', 'Hexagonal Tool-Head Transformation')" class="w-full bg-primary text-white font-button text-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
             Download <span class="material-symbols-outlined text-[18px]">download</span>
-          </a>
+          </button>
         </div>
 
       </div>
     </section>
 
+    <!-- Lead Capture Dialog -->
+    <dialog id="leadCaptureDialog" class="bg-transparent p-0 m-auto backdrop:bg-on-surface/50 backdrop:backdrop-blur-sm w-full max-w-md">
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 shadow-lg flex flex-col gap-6">
+        <div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+          <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Access Technical Library</h3>
+          <button onclick="closeDialog()" class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-full hover:bg-error/10">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="font-body-md text-on-surface-variant">Please enter your professional email address to download this document.</p>
+        </div>
+        <form id="leadCaptureForm" class="flex flex-col gap-4">
+          <!-- Hidden fields for Web3Forms -->
+          <input type="hidden" name="access_key" value="b77d1092-cf06-43cb-bdc6-106ceb7112f9">
+          <input type="hidden" name="from_name" value="Ventura Website Library">
+          <input type="hidden" name="subject" value="New Document Download Lead">
+          <input type="hidden" id="requestedDocument" name="requested_document" value="">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div class="flex flex-col gap-2">
+            <label class="font-label-sm text-on-surface font-bold tracking-wide" for="leadEmail">EMAIL ADDRESS *</label>
+            <input class="w-full bg-surface-container border border-outline-variant/60 rounded-lg px-4 py-3 font-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="leadEmail" name="email" placeholder="john.doe@example.com" type="email" required/>
+          </div>
+          <button type="submit" id="leadSubmitBtn" class="bg-primary w-full text-white font-button uppercase tracking-wider py-4 rounded-lg hover:bg-primary/90 transition-colors duration-300 mt-2 flex justify-center items-center gap-2">
+            <span>Get Document</span>
+            <span class="material-symbols-outlined text-[18px]">download</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <script>
+      const dialog = document.getElementById('leadCaptureDialog');
+      const form = document.getElementById('leadCaptureForm');
+      const requestedDocumentInput = document.getElementById('requestedDocument');
+      const submitBtn = document.getElementById('leadSubmitBtn');
+      let currentDownloadUrl = '';
+
+      window.openDialog = function(url, docName) {
+        currentDownloadUrl = url;
+        requestedDocumentInput.value = docName;
+        dialog.showModal();
+        document.body.style.overflow = 'hidden';
+      }
+
+      window.closeDialog = function() {
+        dialog.close();
+        document.body.style.overflow = '';
+      }
+
+      dialog.addEventListener('click', (e) => {
+        const dialogDimensions = dialog.getBoundingClientRect()
+        if (
+          e.clientX < dialogDimensions.left ||
+          e.clientX > dialogDimensions.right ||
+          e.clientY < dialogDimensions.top ||
+          e.clientY > dialogDimensions.bottom
+        ) {
+          closeDialog();
+        }
+      });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btnSpan = submitBtn.querySelector('span');
+        btnSpan.textContent = 'Processing...';
+        submitBtn.disabled = true;
+
+        try {
+          const formData = new FormData(form);
+          await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+          });
+        } catch(err) {
+          console.error(err);
+        }
+
+        btnSpan.textContent = 'Get Document';
+        submitBtn.disabled = false;
+        closeDialog();
+        window.open(currentDownloadUrl, '_blank');
+      });
+    </script>
   </main>
 
   {{> footer base="../.." }}

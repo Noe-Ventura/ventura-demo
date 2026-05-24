@@ -58,8 +58,7 @@ module.exports = {
       borderRadius: {
         "DEFAULT": "0.125rem",
         "lg": "0.25rem",
-        "xl": "0.5rem",
-        "full": "0.75rem"
+        "xl": "0.5rem"
       },
       spacing: {
         "margin-desktop": "48px",
@@ -80,7 +79,9 @@ module.exports = {
         "headline-md": ["Space Grotesk", "sans-serif"],
         "headline-xl": ["Space Grotesk", "sans-serif"],
         "display-lg-mobile": ["Space Grotesk", "sans-serif"],
-        "display-lg": ["Space Grotesk", "sans-serif"]
+        "display-lg": ["Space Grotesk", "sans-serif"],
+        "display-sm": ["Space Grotesk", "sans-serif"],
+        "headline-sm": ["Space Grotesk", "sans-serif"]
       },
       fontSize: {
         "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
@@ -93,7 +94,18 @@ module.exports = {
         "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
         "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
         "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+        "display-sm": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }]
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" }
+        }
+      },
+      animation: {
+        "fade-in": "fade-in 0.3s ease-out forwards"
       }
     },
   },

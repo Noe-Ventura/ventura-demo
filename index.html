@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Ventura Mecanics SA - Precision Engineering</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/index.css" />
-</head>
+  {{> head title="Ventura Mecanics SA - Precision Engineering" description="Global Leaders in Escomatic® Solutions with Over 40 Years of Excellence. Spare parts, Repairs and Smart turning solutions." canonicalPath="/" }}
 <body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
   
   {{> header base="." }}
@@ -32,7 +23,7 @@
             Learn Why Ventura® Solutions Are Ideal
             <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
           </a>
-          <button onclick="document.getElementById('videoModal').showModal()" class="border border-outline text-on-surface font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-surface-container transition-colors duration-300 flex items-center justify-center gap-2 bg-surface/50 backdrop-blur-sm">
+          <button onclick="openVideoModal()" class="border border-outline text-on-surface font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-surface-container transition-colors duration-300 flex items-center justify-center gap-2 bg-surface/50 backdrop-blur-sm">
             Customer Testimony
             <span class="material-symbols-outlined text-[18px]">play_circle</span>
           </button>
@@ -103,14 +94,32 @@
   
   <dialog id="videoModal" class="backdrop:bg-black/80 backdrop:backdrop-blur-sm bg-transparent w-[95%] max-w-4xl p-0 m-auto rounded-xl shadow-2xl border border-white/10 overflow-hidden">
     <div class="w-full bg-surface-container-highest flex justify-end p-2 border-b border-white/10">
-      <button onclick="document.getElementById('videoModal').close()" class="text-on-surface hover:text-primary transition-colors flex items-center gap-1 font-label-sm px-3 py-1 rounded">
+      <button onclick="closeVideoModal()" class="text-on-surface hover:text-primary transition-colors flex items-center gap-1 font-label-sm px-3 py-1 rounded">
         <span class="material-symbols-outlined text-[20px]">close</span> Close
       </button>
     </div>
     <div class="relative w-full aspect-video bg-black">
-      <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/GA9Aobsmqj4" title="Customer Testimony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="videoIframe" class="absolute inset-0 w-full h-full" data-src="https://www.youtube.com/embed/GA9Aobsmqj4" title="Customer Testimony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </dialog>
+
+  <script>
+    function openVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoIframe');
+      if (!iframe.src || iframe.src === '' || iframe.src === window.location.href) {
+        iframe.src = iframe.getAttribute('data-src');
+      }
+      modal.showModal();
+    }
+    
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoIframe');
+      iframe.src = ''; // Stop video playback when closed
+      modal.close();
+    }
+  </script>
 
   <script type="module" src="/src/main.js"></script>
 </body>

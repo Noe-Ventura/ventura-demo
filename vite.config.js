@@ -4,7 +4,7 @@ import { resolve } from 'path';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-  base: '/ventura-demo/', // Base path for GitHub Pages
+  base: process.env.GITHUB_ACTIONS ? '/ventura-demo/' : '/',
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'src/components'),

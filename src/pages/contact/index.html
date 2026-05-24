@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Contact & Quote - Ventura Mecanics SA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/index.css" />
-</head>
+  {{> head title="Contact & Quote - Ventura Mecanics SA" description="Contact Ventura Mecanics SA for machine retrofits, tool-head overhauls, spare parts, and precise machining solutions." canonicalPath="/src/pages/contact/" }}
 <body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
   
   {{> header base="../.." }}
@@ -125,7 +116,7 @@
 
         <!-- Spain -->
         <div id="content-spain" class="rep-tab-content hidden animate-fade-in">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 gap-6">
             <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
               <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">DIXI-POLYTOOL SPAIN SL</h3>
               <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
@@ -141,28 +132,6 @@
               <div class="flex flex-col gap-1 mt-2">
                 <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
                   <span class="material-symbols-outlined text-[18px]">call</span> +34 678 917 351
-                </span>
-              </div>
-            </div>
-
-            <div class="bg-surface-container rounded-xl p-8 border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <h3 class="font-headline-md text-headline-md font-bold text-primary uppercase tracking-wide">DAUNERT MAQUINAS HERRAMIENTAS S.A.</h3>
-              <div class="font-body-md text-body-md text-on-surface-variant flex flex-col">
-                <span>Tirso de Molina 7-9-11</span>
-                <span>08940 Cornella de Llobregat, ESPAÑA</span>
-              </div>
-              <a href="mailto:info@daunert.com" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors mt-2 flex items-center gap-2">
-                <span class="material-symbols-outlined text-[18px]">mail</span> info@daunert.com
-              </a>
-              <a href="http://www.daunert.com" target="_blank" class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-2">
-                <span class="material-symbols-outlined text-[18px]">language</span> www.daunert.com
-              </a>
-              <div class="flex flex-col gap-1 mt-2">
-                <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
-                  <span class="material-symbols-outlined text-[18px]">call</span> +34 934 751 480
-                </span>
-                <span class="font-body-md text-body-md text-on-surface flex items-center gap-2">
-                  <span class="material-symbols-outlined text-[18px]">fax</span> +34 933 776 464
                 </span>
               </div>
             </div>
@@ -300,29 +269,32 @@
     <section class="w-full max-w-4xl flex flex-col items-center">
       <h2 class="font-headline-lg text-headline-lg text-on-background border-b border-outline-variant/30 pb-4 mb-8 w-full text-center">Request a Quote</h2>
       <div class="w-full bg-surface-container rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/30">
-        <form class="flex flex-col gap-8" action="https://api.web3forms.com/submit" method="POST">
+        <form class="flex flex-col gap-8" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" id="quoteForm">
           <!-- Replace with your actual Web3Forms Access Key -->
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="access_key" value="b77d1092-cf06-43cb-bdc6-106ceb7112f9">
+          <!-- Send to your email -->
+          <input type="hidden" name="from_name" value="Ventura Website Quote Request">
+          <input type="hidden" name="subject" value="New Quote Request — Ventura Website">
           <!-- Prevent spam -->
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex flex-col gap-2">
-              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="firstName">FIRST NAME</label>
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="firstName">FIRST NAME *</label>
               <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="firstName" name="firstName" placeholder="John" type="text" required/>
             </div>
             <div class="flex flex-col gap-2">
-              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="lastName">LAST NAME</label>
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="lastName">LAST NAME *</label>
               <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="lastName" name="lastName" placeholder="Doe" type="text" required/>
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex flex-col gap-2">
-              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="company">COMPANY</label>
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="company">COMPANY *</label>
               <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="company" name="company" placeholder="Ventura Mecanics SA" type="text" required/>
             </div>
             <div class="flex flex-col gap-2">
-              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="email">EMAIL ADDRESS</label>
-              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="email" name="email" placeholder="john.doe@example.com" type="email"/>
+              <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="email">EMAIL ADDRESS *</label>
+              <input class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="email" name="email" placeholder="john.doe@example.com" type="email" required/>
             </div>
           </div>
           <div class="flex flex-col gap-2">
@@ -339,11 +311,44 @@
             <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display" for="message">MESSAGE</label>
             <textarea class="w-full bg-surface-container-low border border-outline-variant/60 rounded-lg px-4 py-3 font-display text-body-md text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" id="message" name="message" placeholder="I am interested in a revision for my Escomatic Spindle type [Model]..." rows="4"></textarea>
           </div>
+
+          <!-- File Upload Zone -->
+          <div class="flex flex-col gap-2">
+            <label class="font-label-sm text-label-sm text-on-surface font-bold tracking-wide font-display">ATTACHMENTS <span class="font-normal text-on-surface-variant">(optional — max 10 MB total)</span></label>
+            <div id="dropZone" class="relative w-full border-2 border-dashed border-outline-variant/60 rounded-xl p-8 flex flex-col items-center justify-center gap-3 cursor-pointer bg-surface-container-low hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group">
+              <span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">cloud_upload</span>
+              <p class="font-body-md text-on-surface-variant text-center group-hover:text-on-surface transition-colors">
+                <span class="font-bold text-primary">Click to browse</span> or drag & drop files here
+              </p>
+              <p class="font-label-sm text-on-surface-variant/70 text-center">PDF, JPG, PNG, WEBP, STEP, DXF — up to 10 MB total</p>
+              <input type="file" id="fileInput" name="attachment" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.step,.stp,.dxf,.dwg,.doc,.docx,.xls,.xlsx" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+            </div>
+            <!-- File list -->
+            <div id="fileList" class="flex flex-col gap-2 mt-2"></div>
+            <!-- Size warning -->
+            <div id="fileSizeWarning" class="hidden items-center gap-2 text-red-600 font-label-sm mt-1">
+              <span class="material-symbols-outlined text-[18px]">error</span>
+              <span>Total file size exceeds 10 MB. Please remove some files.</span>
+            </div>
+          </div>
+
           <div class="flex justify-center mt-4">
-            <button class="bg-primary-container text-white font-label-sm text-label-sm uppercase tracking-wider px-12 py-4 rounded-full hover:bg-primary-container/90 transition-colors duration-300 flex items-center gap-2" type="submit">
+            <button id="submitBtn" class="bg-primary-container text-white font-label-sm text-label-sm uppercase tracking-wider px-12 py-4 rounded-full hover:bg-primary-container/90 transition-colors duration-300 flex items-center gap-2" type="submit">
               <span class="text-white">Send Quote Request</span>
               <span class="material-symbols-outlined text-[18px] text-white" data-icon="arrow_forward">arrow_forward</span>
             </button>
+          </div>
+
+          <!-- Success / Error Messages -->
+          <div id="formSuccess" class="hidden bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+            <span class="material-symbols-outlined text-[40px] text-green-600 mb-2">check_circle</span>
+            <p class="font-headline-md text-green-800 font-bold">Thank you!</p>
+            <p class="font-body-md text-green-700 mt-1">Your quote request has been sent. We will respond within 24–48 hours.</p>
+          </div>
+          <div id="formError" class="hidden bg-red-50 border border-red-200 rounded-xl p-6 text-center">
+            <span class="material-symbols-outlined text-[40px] text-red-600 mb-2">error</span>
+            <p class="font-headline-md text-red-800 font-bold">Something went wrong</p>
+            <p class="font-body-md text-red-700 mt-1">Please try again or contact us directly at <a href="mailto:info@ventura-sa.com" class="underline">info@ventura-sa.com</a></p>
           </div>
         </form>
       </div>
@@ -355,12 +360,33 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+        const MAX_TOTAL_SIZE = 10 * 1024 * 1024; // 10 MB
         const inquiryTypeSelect = document.getElementById('inquiryType');
         const messageTextarea = document.getElementById('message');
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const fileListEl = document.getElementById('fileList');
+        const fileSizeWarning = document.getElementById('fileSizeWarning');
+        const submitBtn = document.getElementById('submitBtn');
+        const form = document.getElementById('quoteForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formError = document.getElementById('formError');
 
+        let selectedFiles = [];
+
+        // URL Param logic for pre-selecting inquiry type
+        const urlParams = new URLSearchParams(window.location.search);
+        const interestParam = urlParams.get('interest');
+        if (interestParam && inquiryTypeSelect) {
+            const options = Array.from(inquiryTypeSelect.options).map(opt => opt.value);
+            if (options.includes(interestParam)) {
+                inquiryTypeSelect.value = interestParam;
+            }
+        }
+
+        // Inquiry type placeholder logic
         if(inquiryTypeSelect && messageTextarea) {
-            inquiryTypeSelect.addEventListener('change', (e) => {
-                const type = e.target.value;
+            const updatePlaceholder = (type) => {
                 switch(type) {
                     case 'revision':
                         messageTextarea.placeholder = "I am interested in a revision for my Escomatic Spindle type [Model]...";
@@ -377,6 +403,137 @@
                     default:
                         messageTextarea.placeholder = "How can we help you today?";
                 }
+            };
+            
+            updatePlaceholder(inquiryTypeSelect.value); // initial setup
+            inquiryTypeSelect.addEventListener('change', (e) => updatePlaceholder(e.target.value));
+        }
+
+        // ===== FILE UPLOAD LOGIC =====
+        // Drag & drop visual feedback
+        if (dropZone) {
+            ['dragenter', 'dragover'].forEach(evt => {
+                dropZone.addEventListener(evt, (e) => {
+                    e.preventDefault();
+                    dropZone.classList.add('border-primary', 'bg-primary/10');
+                });
+            });
+            ['dragleave', 'drop'].forEach(evt => {
+                dropZone.addEventListener(evt, (e) => {
+                    e.preventDefault();
+                    dropZone.classList.remove('border-primary', 'bg-primary/10');
+                });
+            });
+            dropZone.addEventListener('drop', (e) => {
+                const dt = e.dataTransfer;
+                if (dt.files) addFiles(dt.files);
+            });
+        }
+
+        if (fileInput) {
+            fileInput.addEventListener('change', () => {
+                addFiles(fileInput.files);
+                fileInput.value = ''; // reset so same file can be re-added
+            });
+        }
+
+        function addFiles(fileListObj) {
+            for (const file of fileListObj) {
+                // Prevent duplicates
+                if (!selectedFiles.find(f => f.name === file.name && f.size === file.size)) {
+                    selectedFiles.push(file);
+                }
+            }
+            renderFileList();
+        }
+
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+            renderFileList();
+        }
+
+        function formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        function renderFileList() {
+            fileListEl.innerHTML = '';
+            let totalSize = 0;
+
+            selectedFiles.forEach((file, i) => {
+                totalSize += file.size;
+                const ext = file.name.split('.').pop().toUpperCase();
+                const row = document.createElement('div');
+                row.className = 'flex items-center gap-3 bg-surface-container-low rounded-lg px-4 py-3 border border-outline-variant/30';
+                row.innerHTML = `
+                    <span class="material-symbols-outlined text-primary text-[20px]">description</span>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-body-md text-on-surface truncate">${file.name}</p>
+                        <p class="font-label-sm text-on-surface-variant">${ext} — ${formatSize(file.size)}</p>
+                    </div>
+                    <button type="button" data-index="${i}" class="remove-file-btn text-on-surface-variant hover:text-red-500 transition-colors p-1 rounded-full hover:bg-red-50">
+                        <span class="material-symbols-outlined text-[20px]">close</span>
+                    </button>
+                `;
+                fileListEl.appendChild(row);
+            });
+
+            // Attach remove handlers
+            fileListEl.querySelectorAll('.remove-file-btn').forEach(btn => {
+                btn.addEventListener('click', () => removeFile(parseInt(btn.dataset.index)));
+            });
+
+            // Check total size
+            const overLimit = totalSize > MAX_TOTAL_SIZE;
+            fileSizeWarning.classList.toggle('hidden', !overLimit);
+            fileSizeWarning.classList.toggle('flex', overLimit);
+            submitBtn.disabled = overLimit;
+            submitBtn.classList.toggle('opacity-50', overLimit);
+            submitBtn.classList.toggle('cursor-not-allowed', overLimit);
+        }
+
+        // ===== FORM SUBMISSION =====
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                formSuccess.classList.add('hidden');
+                formError.classList.add('hidden');
+
+                // Build FormData
+                const formData = new FormData(form);
+                // Remove original file input entries (browser may have stale refs)
+                formData.delete('attachment');
+                // Append our managed files
+                selectedFiles.forEach(file => {
+                    formData.append('attachment', file);
+                });
+
+                // Disable button
+                submitBtn.disabled = true;
+                submitBtn.querySelector('span:first-child').textContent = 'Sending...';
+
+                try {
+                    const res = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData,
+                    });
+                    const data = await res.json();
+                    if (data.success) {
+                        formSuccess.classList.remove('hidden');
+                        form.reset();
+                        selectedFiles = [];
+                        renderFileList();
+                    } else {
+                        formError.classList.remove('hidden');
+                    }
+                } catch (err) {
+                    formError.classList.remove('hidden');
+                }
+
+                submitBtn.disabled = false;
+                submitBtn.querySelector('span:first-child').textContent = 'Send Quote Request';
             });
         }
     });
